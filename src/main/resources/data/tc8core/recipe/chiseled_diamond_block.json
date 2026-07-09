@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "tc8core:chiseling_template"
+  },
+  "base": {
+    "item": "minecraft:diamond_block"
+  },
+  "addition": {
+    "item": "minecraft:diamond"
+  },
+  "result": {
+    "id": "tc8core:chiseled_diamond_block",
+    "count": 1
+  }
+}

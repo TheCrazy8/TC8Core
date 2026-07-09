@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "tc8core:chiseling_template"
+  },
+  "base": {
+    "item": "minecraft:redstone_block"
+  },
+  "addition": {
+    "item": "minecraft:redstone"
+  },
+  "result": {
+    "id": "tc8core:chiseled_redstone_block",
+    "count": 1
+  }
+}

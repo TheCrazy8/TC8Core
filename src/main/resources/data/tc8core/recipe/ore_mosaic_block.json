@@ -42,11 +42,14 @@
     },
     {
       "item": "create:andesite_alloy"
+    },
+    {
+      "item": "iss_magicfromtheeast:jade"
     }
   ],
   "results": [
     {
-      "item": "tc8core:ore_mosaic_block",
+      "id": "tc8core:ore_mosaic_block",
       "count": 1
     }
   ],

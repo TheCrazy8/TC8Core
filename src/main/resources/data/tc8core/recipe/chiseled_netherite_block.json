@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "tc8core:chiseling_template"
+  },
+  "base": {
+    "item": "minecraft:netherite_block"
+  },
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "result": {
+    "id": "tc8core:chiseled_netherite_block",
+    "count": 1
+  }
+}

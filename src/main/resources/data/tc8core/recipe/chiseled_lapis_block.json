@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "tc8core:chiseling_template"
+  },
+  "base": {
+    "item": "minecraft:lapis_block"
+  },
+  "addition": {
+    "item": "minecraft:gold_nugget"
+  },
+  "result": {
+    "id": "tc8core:chiseled_lapis_block",
+    "count": 1
+  }
+}

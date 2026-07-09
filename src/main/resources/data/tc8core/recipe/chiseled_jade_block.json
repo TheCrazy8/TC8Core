@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "tc8core:chiseling_template"
+  },
+  "base": {
+    "item": "iss_magicfromtheeast:refined_jade_block"
+  },
+  "addition": {
+    "item": "iss_magicfromtheeast:jade"
+  },
+  "result": {
+    "id": "tc8core:chiseled_jade_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "tc8core:chiseling_template"
+  },
+  "base": {
+    "item": "create:andesite_alloy_block"
+  },
+  "addition": {
+    "item": "create:andesite_alloy"
+  },
+  "result": {
+    "id": "tc8core:chiseled_andesite_alloy_block",
+    "count": 1
+  }
+}

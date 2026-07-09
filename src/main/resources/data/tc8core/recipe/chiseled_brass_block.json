@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "tc8core:chiseling_template"
+  },
+  "base": {
+    "item": "create:brass_block"
+  },
+  "addition": {
+    "item": "create:brass_ingot"
+  },
+  "result": {
+    "id": "tc8core:chiseled_brass_block",
+    "count": 1
+  }
+}

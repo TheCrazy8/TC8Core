@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "tc8core:chiseling_template"
+  },
+  "base": {
+    "item": "minecraft:gold_block"
+  },
+  "addition": {
+    "item": "minecraft:emerald"
+  },
+  "result": {
+    "id": "tc8core:chiseled_gold_block",
+    "count": 1
+  }
+}
