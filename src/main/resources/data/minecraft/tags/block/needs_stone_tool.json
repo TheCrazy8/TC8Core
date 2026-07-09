@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "tc8core:chiseled_lapis_block",
+    "tc8core:chiseled_copper_block",
+    "tc8core:chiseled_iron_block",
+    "tc8core:chiseled_zinc_block",
+    "tc8core:chiseled_brass_block",
+    "tc8core:chiseled_andesite_alloy_block",
+    "tc8core:ore_mosaic_block"
+  ]
+}
