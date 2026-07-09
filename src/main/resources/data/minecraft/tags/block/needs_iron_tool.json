@@ -1,11 +1,6 @@
 {
   "replace": false,
   "values": [
-    "tc8core:chiseled_emerald_block",
-    "tc8core:chiseled_redstone_block",
-    "tc8core:chiseled_gold_block",
-    "tc8core:chiseled_amethyst_block",
-    "tc8core:chiseled_diamond_block",
-    "tc8core:chiseled_jade_block"
+    "tc8core:chiseled_palladium_block"
   ]
 }

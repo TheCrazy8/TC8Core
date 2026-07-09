@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "tc8core:chiseling_template"
+  },
+  "base": {
+    "item": "galosphere:palladium_block"
+  },
+  "addition": {
+    "item": "galosphere:palladium_ingot"
+  },
+  "result": {
+    "id": "tc8core:chiseled_palladium_block",
+    "count": 1
+  }
+}
