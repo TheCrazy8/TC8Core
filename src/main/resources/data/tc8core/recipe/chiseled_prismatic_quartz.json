@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "tc8core:chiseling_template"
+  },
+  "base": {
+    "item": "tc8core:prismatic_quartz_bricks"
+  },
+  "addition": {
+    "item": "tc8core:prismatic_quartz"
+  },
+  "result": {
+    "id": "tc8core:chiseled_prismatic_quartz",
+    "count": 1
+  }
+}

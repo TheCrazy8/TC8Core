@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B",
+    "B"
+  ],
+  "key": {
+    "B": {
+      "item": "tc8core:prismatic_quartz_bricks"
+    }
+  },
+  "result": {
+    "id": "tc8core:prismatic_quartz_pillar",
+    "count": 2
+  }
+}
