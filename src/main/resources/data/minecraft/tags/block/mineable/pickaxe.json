@@ -16,6 +16,9 @@
     "tc8core:chiseled_jade_block",
     "tc8core:chiseled_palladium_block",
     "tc8core:chiseled_luminere_block",
-    "tc8core:ore_mosaic_block"
+    "tc8core:ore_mosaic_block",
+    "tc8core:prismatic_quartz_bricks",
+    "tc8core:chiseled_prismatic_quartz",
+    "tc8core:prismatic_quartz_pillar"
   ]
 }
