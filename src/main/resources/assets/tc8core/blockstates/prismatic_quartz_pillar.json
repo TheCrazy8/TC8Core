@@ -1,0 +1,70 @@
+{
+  "variants": {
+    "axis=x": [
+      {
+        "model": "tc8core:block/prismatic_quartz_pillar_horizontal_1",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "tc8core:block/prismatic_quartz_pillar_horizontal_2",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "tc8core:block/prismatic_quartz_pillar_horizontal_3",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "tc8core:block/prismatic_quartz_pillar_horizontal_4",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "tc8core:block/prismatic_quartz_pillar_horizontal_5",
+        "x": 90,
+        "y": 90
+      }
+    ],
+    "axis=y": [
+      {
+        "model": "tc8core:block/prismatic_quartz_pillar_1"
+      },
+      {
+        "model": "tc8core:block/prismatic_quartz_pillar_2"
+      },
+      {
+        "model": "tc8core:block/prismatic_quartz_pillar_3"
+      },
+      {
+        "model": "tc8core:block/prismatic_quartz_pillar_4"
+      },
+      {
+        "model": "tc8core:block/prismatic_quartz_pillar_5"
+      }
+    ],
+    "axis=z": [
+      {
+        "model": "tc8core:block/prismatic_quartz_pillar_horizontal_1",
+        "x": 90
+      },
+      {
+        "model": "tc8core:block/prismatic_quartz_pillar_horizontal_2",
+        "x": 90
+      },
+      {
+        "model": "tc8core:block/prismatic_quartz_pillar_horizontal_3",
+        "x": 90
+      },
+      {
+        "model": "tc8core:block/prismatic_quartz_pillar_horizontal_4",
+        "x": 90
+      },
+      {
+        "model": "tc8core:block/prismatic_quartz_pillar_horizontal_5",
+        "x": 90
+      }
+    ]
+  }
+}

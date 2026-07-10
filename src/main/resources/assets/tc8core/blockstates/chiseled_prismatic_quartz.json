@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "tc8core:block/chiseled_prismatic_quartz_1"
+      },
+      {
+        "model": "tc8core:block/chiseled_prismatic_quartz_2"
+      },
+      {
+        "model": "tc8core:block/chiseled_prismatic_quartz_3"
+      },
+      {
+        "model": "tc8core:block/chiseled_prismatic_quartz_4"
+      },
+      {
+        "model": "tc8core:block/chiseled_prismatic_quartz_5"
+      }
+    ]
+  }
+}
