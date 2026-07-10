@@ -12,6 +12,7 @@
     "tc8core:prismatic_quartz_bricks",
     "tc8core:chiseled_prismatic_quartz",
     "tc8core:prismatic_quartz_pillar",
-    "tc8core:magma_cream_block"
+    "tc8core:magma_cream_block",
+    "tc8core:chiseled_allurite_block"
   ]
 }

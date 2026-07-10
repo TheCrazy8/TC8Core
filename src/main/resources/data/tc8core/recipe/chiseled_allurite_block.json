@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "tc8core:chiseling_template"
+  },
+  "base": {
+    "item": "galosphere:allurite_block"
+  },
+  "addition": {
+    "item": "galosphere:allurite_shard"
+  },
+  "result": {
+    "id": "tc8core:chiseled_allurite_block",
+    "count": 1
+  }
+}
