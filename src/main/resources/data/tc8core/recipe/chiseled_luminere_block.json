@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "tc8core:chiseling_template"
+  },
+  "base": {
+    "item": "galosphere:lumiere_block"
+  },
+  "addition": {
+    "item": "galosphere:lumiere_shard"
+  },
+  "result": {
+    "id": "tc8core:chiseled_luminere_block",
+    "count": 1
+  }
+}
