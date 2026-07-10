@@ -8,6 +8,9 @@
     "tc8core:chiseled_brass_block",
     "tc8core:chiseled_andesite_alloy_block",
     "tc8core:chiseled_luminere_block",
-    "tc8core:ore_mosaic_block"
+    "tc8core:ore_mosaic_block",
+    "tc8core:prismatic_quartz_bricks",
+    "tc8core:chiseled_prismatic_quartz",
+    "tc8core:prismatic_quartz_pillar"
   ]
 }
