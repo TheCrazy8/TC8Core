@@ -70,6 +70,8 @@ public class TC8Core {
             registerBlock("chiseled_palladium_block", MapColor.METAL);
     public static final DeferredBlock<Block> CHISELED_LUMINERE_BLOCK =
             registerBlock("chiseled_luminere_block", MapColor.GOLD);
+    public static final DeferredBlock<Block> CHISELED_ALLURITE_BLOCK =
+            registerBlock("chiseled_allurite_block", MapColor.DIAMOND);
 
     public static final DeferredBlock<Block> PRISMATIC_QUARTZ_BRICKS =
             registerBlock("prismatic_quartz_bricks", MapColor.QUARTZ);
@@ -119,6 +121,7 @@ public class TC8Core {
                         output.accept(CHISELED_JADE_BLOCK.get());
                         output.accept(CHISELED_PALLADIUM_BLOCK.get());
                         output.accept(CHISELED_LUMINERE_BLOCK.get());
+                        output.accept(CHISELED_ALLURITE_BLOCK.get());
                         output.accept(ORE_MOSAIC_BLOCK.get());
                     }).build());
 
@@ -149,18 +152,8 @@ public class TC8Core {
     }
 
     public static class PoweredChiseledBlock extends Block {
-        public PoweredChiseledBlock(Properties properties) {
-            super(properties);
-        }
-
-        @Override
-        public boolean isSignalSource(BlockState state) {
-            return true;
-        }
-
-        @Override
-        public int getSignal(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-            return 15;
-        }
+        public PoweredChiseledBlock(Properties properties) { super(properties); }
+        @Override public boolean isSignalSource(BlockState state) { return true; }
+        @Override public int getSignal(BlockState state, BlockGetter level, BlockPos pos, Direction direction) { return 15; }
     }
 }
