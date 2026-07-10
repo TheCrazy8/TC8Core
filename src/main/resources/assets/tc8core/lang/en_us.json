@@ -1,3 +1,20 @@
 {
-  "block.tc8core.chiseled_luminere_block": "Chiseled Luminere Block"
+  "itemGroup.tc8core": "TC8 Core",
+  "item.tc8core.chiseling_template": "Chiseling Template",
+  "block.tc8core.chiseled_lapis_block": "Chiseled Lapis Block",
+  "block.tc8core.chiseled_emerald_block": "Chiseled Emerald Block",
+  "block.tc8core.chiseled_redstone_block": "Chiseled Redstone Block",
+  "block.tc8core.chiseled_gold_block": "Chiseled Gold Block",
+  "block.tc8core.chiseled_copper_block": "Chiseled Copper Block",
+  "block.tc8core.chiseled_iron_block": "Chiseled Iron Block",
+  "block.tc8core.chiseled_netherite_block": "Chiseled Netherite Block",
+  "block.tc8core.chiseled_amethyst_block": "Chiseled Amethyst Block",
+  "block.tc8core.chiseled_diamond_block": "Chiseled Diamond Block",
+  "block.tc8core.chiseled_zinc_block": "Chiseled Zinc Block",
+  "block.tc8core.chiseled_brass_block": "Chiseled Brass Block",
+  "block.tc8core.chiseled_andesite_alloy_block": "Chiseled Andesite Alloy Block",
+  "block.tc8core.chiseled_jade_block": "Chiseled Jade Block",
+  "block.tc8core.chiseled_palladium_block": "Chiseled Palladium Block",
+  "block.tc8core.chiseled_luminere_block": "Chiseled Lumiere Block",
+  "block.tc8core.ore_mosaic_block": "Ore Mosaic Block"
 }
