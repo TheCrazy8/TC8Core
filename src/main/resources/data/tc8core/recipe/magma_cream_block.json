@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MMM",
+    "MMM",
+    "MMM"
+  ],
+  "key": {
+    "M": {
+      "item": "minecraft:magma_cream"
+    }
+  },
+  "result": {
+    "id": "tc8core:magma_cream_block",
+    "count": 1
+  }
+}
