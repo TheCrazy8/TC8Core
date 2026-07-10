@@ -29,51 +29,77 @@ public class TC8Core {
 
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MODID);
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
-    public static final DeferredItem<Item> CHISELING_TEMPLATE = ITEMS.register("chiseling_template", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CHISELING_TEMPLATE =
+            ITEMS.register("chiseling_template", () -> new Item(new Item.Properties()));
 
-    public static final DeferredBlock<Block> CHISELED_LAPIS_BLOCK = registerBlock("chiseled_lapis_block", MapColor.LAPIS);
-    public static final DeferredBlock<Block> CHISELED_EMERALD_BLOCK = registerBlock("chiseled_emerald_block", MapColor.EMERALD);
-    public static final DeferredBlock<Block> CHISELED_GOLD_BLOCK = registerBlock("chiseled_gold_block", MapColor.GOLD);
-    public static final DeferredBlock<Block> CHISELED_COPPER_BLOCK = registerBlock("chiseled_copper_block", MapColor.COLOR_ORANGE);
-    public static final DeferredBlock<Block> CHISELED_IRON_BLOCK = registerBlock("chiseled_iron_block", MapColor.METAL);
-    public static final DeferredBlock<Block> CHISELED_NETHERITE_BLOCK = registerBlock("chiseled_netherite_block", MapColor.COLOR_BLACK);
-    public static final DeferredBlock<Block> CHISELED_AMETHYST_BLOCK = registerBlock("chiseled_amethyst_block", MapColor.COLOR_PURPLE);
-    public static final DeferredBlock<Block> CHISELED_DIAMOND_BLOCK = registerBlock("chiseled_diamond_block", MapColor.DIAMOND);
-    public static final DeferredBlock<Block> CHISELED_ZINC_BLOCK = registerBlock("chiseled_zinc_block", MapColor.METAL);
-    public static final DeferredBlock<Block> CHISELED_BRASS_BLOCK = registerBlock("chiseled_brass_block", MapColor.GOLD);
-    public static final DeferredBlock<Block> CHISELED_ANDESITE_ALLOY_BLOCK = registerBlock("chiseled_andesite_alloy_block", MapColor.METAL);
-    public static final DeferredBlock<Block> CHISELED_JADE_BLOCK = registerBlock("chiseled_jade_block", MapColor.EMERALD);
-    public static final DeferredBlock<Block> ORE_MOSAIC_BLOCK = registerBlock("ore_mosaic_block", MapColor.METAL);
+    public static final DeferredBlock<Block> CHISELED_LAPIS_BLOCK =
+            registerBlock("chiseled_lapis_block", MapColor.LAPIS);
+    public static final DeferredBlock<Block> CHISELED_EMERALD_BLOCK =
+            registerBlock("chiseled_emerald_block", MapColor.EMERALD);
+    public static final DeferredBlock<Block> CHISELED_GOLD_BLOCK =
+            registerBlock("chiseled_gold_block", MapColor.GOLD);
+    public static final DeferredBlock<Block> CHISELED_COPPER_BLOCK =
+            registerBlock("chiseled_copper_block", MapColor.COLOR_ORANGE);
+    public static final DeferredBlock<Block> CHISELED_IRON_BLOCK =
+            registerBlock("chiseled_iron_block", MapColor.METAL);
+    public static final DeferredBlock<Block> CHISELED_NETHERITE_BLOCK =
+            registerBlock("chiseled_netherite_block", MapColor.COLOR_BLACK);
+    public static final DeferredBlock<Block> CHISELED_AMETHYST_BLOCK =
+            registerBlock("chiseled_amethyst_block", MapColor.COLOR_PURPLE);
+    public static final DeferredBlock<Block> CHISELED_DIAMOND_BLOCK =
+            registerBlock("chiseled_diamond_block", MapColor.DIAMOND);
+    public static final DeferredBlock<Block> CHISELED_ZINC_BLOCK =
+            registerBlock("chiseled_zinc_block", MapColor.METAL);
+    public static final DeferredBlock<Block> CHISELED_BRASS_BLOCK =
+            registerBlock("chiseled_brass_block", MapColor.GOLD);
+    public static final DeferredBlock<Block> CHISELED_ANDESITE_ALLOY_BLOCK =
+            registerBlock("chiseled_andesite_alloy_block", MapColor.METAL);
+    public static final DeferredBlock<Block> CHISELED_JADE_BLOCK =
+            registerBlock("chiseled_jade_block", MapColor.EMERALD);
+    public static final DeferredBlock<Block> ORE_MOSAIC_BLOCK =
+            registerBlock("ore_mosaic_block", MapColor.METAL);
 
-    public static final DeferredBlock<Block> CHISELED_REDSTONE_BLOCK = BLOCKS.register("chiseled_redstone_block", () ->
-            new PoweredChiseledBlock(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.COLOR_RED)
-                    .requiresCorrectToolForDrops()
-                    .strength(5.0F, 6.0F)));
-    public static final DeferredItem<BlockItem> CHISELED_REDSTONE_BLOCK_ITEM = ITEMS.registerSimpleBlockItem(CHISELED_REDSTONE_BLOCK);
+    // These assets already existed but the blocks were not registered.
+    public static final DeferredBlock<Block> CHISELED_PALLADIUM_BLOCK =
+            registerBlock("chiseled_palladium_block", MapColor.METAL);
+    public static final DeferredBlock<Block> CHISELED_LUMINERE_BLOCK =
+            registerBlock("chiseled_luminere_block", MapColor.GOLD);
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TC8_CORE_TAB = CREATIVE_MODE_TABS.register("tc8core", () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup.tc8core"))
-            .icon(() -> CHISELING_TEMPLATE.get().getDefaultInstance())
-            .displayItems((parameters, output) -> {
-                output.accept(CHISELING_TEMPLATE.get());
-                output.accept(CHISELED_LAPIS_BLOCK.get());
-                output.accept(CHISELED_EMERALD_BLOCK.get());
-                output.accept(CHISELED_REDSTONE_BLOCK.get());
-                output.accept(CHISELED_GOLD_BLOCK.get());
-                output.accept(CHISELED_COPPER_BLOCK.get());
-                output.accept(CHISELED_IRON_BLOCK.get());
-                output.accept(CHISELED_NETHERITE_BLOCK.get());
-                output.accept(CHISELED_AMETHYST_BLOCK.get());
-                output.accept(CHISELED_DIAMOND_BLOCK.get());
-                output.accept(CHISELED_ZINC_BLOCK.get());
-                output.accept(CHISELED_BRASS_BLOCK.get());
-                output.accept(CHISELED_ANDESITE_ALLOY_BLOCK.get());
-                output.accept(CHISELED_JADE_BLOCK.get());
-                output.accept(ORE_MOSAIC_BLOCK.get());
-            }).build());
+    public static final DeferredBlock<Block> CHISELED_REDSTONE_BLOCK =
+            BLOCKS.register("chiseled_redstone_block", () ->
+                    new PoweredChiseledBlock(BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.COLOR_RED)
+                            .requiresCorrectToolForDrops()
+                            .strength(5.0F, 6.0F)));
+    public static final DeferredItem<BlockItem> CHISELED_REDSTONE_BLOCK_ITEM =
+            ITEMS.registerSimpleBlockItem(CHISELED_REDSTONE_BLOCK);
+
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TC8_CORE_TAB =
+            CREATIVE_MODE_TABS.register("tc8core", () -> CreativeModeTab.builder()
+                    .title(Component.translatable("itemGroup.tc8core"))
+                    .icon(() -> CHISELING_TEMPLATE.get().getDefaultInstance())
+                    .displayItems((parameters, output) -> {
+                        output.accept(CHISELING_TEMPLATE.get());
+                        output.accept(CHISELED_LAPIS_BLOCK.get());
+                        output.accept(CHISELED_EMERALD_BLOCK.get());
+                        output.accept(CHISELED_REDSTONE_BLOCK.get());
+                        output.accept(CHISELED_GOLD_BLOCK.get());
+                        output.accept(CHISELED_COPPER_BLOCK.get());
+                        output.accept(CHISELED_IRON_BLOCK.get());
+                        output.accept(CHISELED_NETHERITE_BLOCK.get());
+                        output.accept(CHISELED_AMETHYST_BLOCK.get());
+                        output.accept(CHISELED_DIAMOND_BLOCK.get());
+                        output.accept(CHISELED_ZINC_BLOCK.get());
+                        output.accept(CHISELED_BRASS_BLOCK.get());
+                        output.accept(CHISELED_ANDESITE_ALLOY_BLOCK.get());
+                        output.accept(CHISELED_JADE_BLOCK.get());
+                        output.accept(CHISELED_PALLADIUM_BLOCK.get());
+                        output.accept(CHISELED_LUMINERE_BLOCK.get());
+                        output.accept(ORE_MOSAIC_BLOCK.get());
+                    }).build());
 
     public TC8Core(IEventBus modEventBus, ModContainer modContainer) {
         BLOCKS.register(modEventBus);
@@ -82,10 +108,11 @@ public class TC8Core {
     }
 
     private static DeferredBlock<Block> registerBlock(String name, MapColor color) {
-        DeferredBlock<Block> block = BLOCKS.register(name, () -> new Block(BlockBehaviour.Properties.of()
-                .mapColor(color)
-                .requiresCorrectToolForDrops()
-                .strength(5.0F, 6.0F)));
+        DeferredBlock<Block> block = BLOCKS.register(name, () ->
+                new Block(BlockBehaviour.Properties.of()
+                        .mapColor(color)
+                        .requiresCorrectToolForDrops()
+                        .strength(5.0F, 6.0F)));
         ITEMS.registerSimpleBlockItem(block);
         return block;
     }
