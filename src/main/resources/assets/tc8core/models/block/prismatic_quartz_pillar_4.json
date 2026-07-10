@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "tc8core:block/prismatic_quartz_pillar_top_4",
+    "side": "tc8core:block/prismatic_quartz_pillar_4"
+  }
+}

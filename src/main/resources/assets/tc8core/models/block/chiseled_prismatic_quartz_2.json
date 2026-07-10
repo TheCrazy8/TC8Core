@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "tc8core:block/chiseled_prismatic_quartz_top_2",
+    "side": "tc8core:block/chiseled_prismatic_quartz_2"
+  }
+}
