@@ -10,6 +10,8 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.MagmaBlock;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
@@ -76,6 +78,12 @@ public class TC8Core {
     public static final DeferredBlock<RotatedPillarBlock> PRISMATIC_QUARTZ_PILLAR =
             registerPillarBlock("prismatic_quartz_pillar", MapColor.QUARTZ);
 
+    public static final DeferredBlock<MagmaBlock> MAGMA_CREAM_BLOCK =
+            BLOCKS.register("magma_cream_block", () ->
+                    new MagmaBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MAGMA_BLOCK)));
+    public static final DeferredItem<BlockItem> MAGMA_CREAM_BLOCK_ITEM =
+            ITEMS.registerSimpleBlockItem(MAGMA_CREAM_BLOCK);
+
     public static final DeferredBlock<Block> CHISELED_REDSTONE_BLOCK =
             BLOCKS.register("chiseled_redstone_block", () ->
                     new PoweredChiseledBlock(BlockBehaviour.Properties.of()
@@ -95,6 +103,7 @@ public class TC8Core {
                         output.accept(PRISMATIC_QUARTZ_BRICKS.get());
                         output.accept(CHISELED_PRISMATIC_QUARTZ.get());
                         output.accept(PRISMATIC_QUARTZ_PILLAR.get());
+                        output.accept(MAGMA_CREAM_BLOCK.get());
                         output.accept(CHISELED_LAPIS_BLOCK.get());
                         output.accept(CHISELED_EMERALD_BLOCK.get());
                         output.accept(CHISELED_REDSTONE_BLOCK.get());
