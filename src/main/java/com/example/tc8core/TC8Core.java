@@ -10,6 +10,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.MapColor;
@@ -34,6 +35,8 @@ public class TC8Core {
 
     public static final DeferredItem<Item> CHISELING_TEMPLATE =
             ITEMS.register("chiseling_template", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PRISMATIC_QUARTZ =
+            ITEMS.register("prismatic_quartz", () -> new Item(new Item.Properties()));
 
     public static final DeferredBlock<Block> CHISELED_LAPIS_BLOCK =
             registerBlock("chiseled_lapis_block", MapColor.LAPIS);
@@ -61,12 +64,17 @@ public class TC8Core {
             registerBlock("chiseled_jade_block", MapColor.EMERALD);
     public static final DeferredBlock<Block> ORE_MOSAIC_BLOCK =
             registerBlock("ore_mosaic_block", MapColor.METAL);
-
-    // These assets already existed but the blocks were not registered.
     public static final DeferredBlock<Block> CHISELED_PALLADIUM_BLOCK =
             registerBlock("chiseled_palladium_block", MapColor.METAL);
     public static final DeferredBlock<Block> CHISELED_LUMINERE_BLOCK =
             registerBlock("chiseled_luminere_block", MapColor.GOLD);
+
+    public static final DeferredBlock<Block> PRISMATIC_QUARTZ_BRICKS =
+            registerBlock("prismatic_quartz_bricks", MapColor.QUARTZ);
+    public static final DeferredBlock<Block> CHISELED_PRISMATIC_QUARTZ =
+            registerBlock("chiseled_prismatic_quartz", MapColor.QUARTZ);
+    public static final DeferredBlock<RotatedPillarBlock> PRISMATIC_QUARTZ_PILLAR =
+            registerPillarBlock("prismatic_quartz_pillar", MapColor.QUARTZ);
 
     public static final DeferredBlock<Block> CHISELED_REDSTONE_BLOCK =
             BLOCKS.register("chiseled_redstone_block", () ->
@@ -83,6 +91,10 @@ public class TC8Core {
                     .icon(() -> CHISELING_TEMPLATE.get().getDefaultInstance())
                     .displayItems((parameters, output) -> {
                         output.accept(CHISELING_TEMPLATE.get());
+                        output.accept(PRISMATIC_QUARTZ.get());
+                        output.accept(PRISMATIC_QUARTZ_BRICKS.get());
+                        output.accept(CHISELED_PRISMATIC_QUARTZ.get());
+                        output.accept(PRISMATIC_QUARTZ_PILLAR.get());
                         output.accept(CHISELED_LAPIS_BLOCK.get());
                         output.accept(CHISELED_EMERALD_BLOCK.get());
                         output.accept(CHISELED_REDSTONE_BLOCK.get());
@@ -110,6 +122,16 @@ public class TC8Core {
     private static DeferredBlock<Block> registerBlock(String name, MapColor color) {
         DeferredBlock<Block> block = BLOCKS.register(name, () ->
                 new Block(BlockBehaviour.Properties.of()
+                        .mapColor(color)
+                        .requiresCorrectToolForDrops()
+                        .strength(5.0F, 6.0F)));
+        ITEMS.registerSimpleBlockItem(block);
+        return block;
+    }
+
+    private static DeferredBlock<RotatedPillarBlock> registerPillarBlock(String name, MapColor color) {
+        DeferredBlock<RotatedPillarBlock> block = BLOCKS.register(name, () ->
+                new RotatedPillarBlock(BlockBehaviour.Properties.of()
                         .mapColor(color)
                         .requiresCorrectToolForDrops()
                         .strength(5.0F, 6.0F)));
