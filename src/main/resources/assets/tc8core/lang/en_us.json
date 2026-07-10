@@ -1,6 +1,10 @@
 {
   "itemGroup.tc8core": "TC8 Core",
   "item.tc8core.chiseling_template": "Chiseling Template",
+  "item.tc8core.prismatic_quartz": "Prismatic Quartz",
+  "block.tc8core.prismatic_quartz_bricks": "Prismatic Quartz Bricks",
+  "block.tc8core.chiseled_prismatic_quartz": "Chiseled Prismatic Quartz",
+  "block.tc8core.prismatic_quartz_pillar": "Prismatic Quartz Pillar",
   "block.tc8core.chiseled_lapis_block": "Chiseled Lapis Block",
   "block.tc8core.chiseled_emerald_block": "Chiseled Emerald Block",
   "block.tc8core.chiseled_redstone_block": "Chiseled Redstone Block",
