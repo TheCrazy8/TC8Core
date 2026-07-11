@@ -1,5 +1,6 @@
 package com.example.tc8core;
 
+import com.example.tc8core.celeste.CelesteContent;
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -95,6 +96,10 @@ public class TC8Core {
     public static final DeferredItem<BlockItem> CHISELED_REDSTONE_BLOCK_ITEM =
             ITEMS.registerSimpleBlockItem(CHISELED_REDSTONE_BLOCK);
 
+    static {
+        CelesteContent.bootstrap();
+    }
+
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TC8_CORE_TAB =
             CREATIVE_MODE_TABS.register("tc8core", () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.tc8core"))
@@ -106,6 +111,30 @@ public class TC8Core {
                         output.accept(CHISELED_PRISMATIC_QUARTZ.get());
                         output.accept(PRISMATIC_QUARTZ_PILLAR.get());
                         output.accept(MAGMA_CREAM_BLOCK.get());
+
+                        output.accept(CelesteContent.STRAWBERRY.get());
+                        output.accept(CelesteContent.GOLDEN_STRAWBERRY.get());
+                        output.accept(CelesteContent.CRYSTAL_HEART.get());
+                        output.accept(CelesteContent.CASSETTE.get());
+                        output.accept(CelesteContent.FEATHER.get());
+                        output.accept(CelesteContent.CELESTIAL_CRYSTAL_BLOCK.get());
+                        output.accept(CelesteContent.DREAM_BLOCK.get());
+                        output.accept(CelesteContent.FORSAKEN_TEMPLE_BRICKS.get());
+                        output.accept(CelesteContent.GOLDEN_RIDGE_STONE.get());
+                        output.accept(CelesteContent.MIRROR_TEMPLE_TILES.get());
+                        output.accept(CelesteContent.SUMMIT_MOSAIC.get());
+                        output.accept(CelesteContent.CASSETTE_BLOCK.get());
+                        output.accept(CelesteContent.DASH_REFILL_CRYSTAL.get());
+                        output.accept(CelesteContent.TRAFFIC_BLOCK.get());
+                        output.accept(CelesteContent.SPRING_BLOCK.get());
+                        output.accept(CelesteContent.BOOSTER_BLOCK.get());
+                        output.accept(CelesteContent.CRUMBLE_BLOCK.get());
+                        output.accept(CelesteContent.KEVIN_BLOCK.get());
+                        output.accept(CelesteContent.THEO_CRYSTAL_STATUE.get());
+                        output.accept(CelesteContent.MINI_MOUNTAIN_MODEL.get());
+                        output.accept(CelesteContent.CELESTE_SIGN.get());
+                        output.accept(CelesteContent.CELESTE_BANNER.get());
+
                         output.accept(CHISELED_LAPIS_BLOCK.get());
                         output.accept(CHISELED_EMERALD_BLOCK.get());
                         output.accept(CHISELED_REDSTONE_BLOCK.get());
