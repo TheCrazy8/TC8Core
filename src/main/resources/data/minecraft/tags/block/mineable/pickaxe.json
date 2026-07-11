@@ -21,6 +21,23 @@
     "tc8core:chiseled_prismatic_quartz",
     "tc8core:prismatic_quartz_pillar",
     "tc8core:magma_cream_block",
-    "tc8core:chiseled_allurite_block"
+    "tc8core:chiseled_allurite_block",
+    "tc8core:celestial_crystal_block",
+    "tc8core:dream_block",
+    "tc8core:forsaken_temple_bricks",
+    "tc8core:golden_ridge_stone",
+    "tc8core:mirror_temple_tiles",
+    "tc8core:summit_mosaic",
+    "tc8core:cassette_block",
+    "tc8core:dash_refill_crystal",
+    "tc8core:traffic_block",
+    "tc8core:spring_block",
+    "tc8core:booster_block",
+    "tc8core:crumble_block",
+    "tc8core:kevin_block",
+    "tc8core:theo_crystal_statue",
+    "tc8core:mini_mountain_model",
+    "tc8core:celeste_sign",
+    "tc8core:celeste_banner"
   ]
 }
