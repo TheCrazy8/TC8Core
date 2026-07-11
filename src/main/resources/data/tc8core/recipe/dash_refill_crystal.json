@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:amethyst_block"
+    },
+    {
+      "item": "reestrogen:feather_of_dreams"
+    }
+  ],
+  "result": {
+    "id": "tc8core:dash_refill_crystal",
+    "count": 1
+  }
+}

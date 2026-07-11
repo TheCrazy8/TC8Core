@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:emerald_block"
+    },
+    {
+      "item": "minecraft:firework_rocket"
+    }
+  ],
+  "result": {
+    "id": "tc8core:booster_block",
+    "count": 1
+  }
+}

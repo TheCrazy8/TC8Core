@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cyan_stained_glass"
+    },
+    {
+      "item": "minecraft:armor_stand"
+    }
+  ],
+  "result": {
+    "id": "tc8core:theo_crystal_statue",
+    "count": 1
+  }
+}

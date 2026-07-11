@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:red_concrete"
+    },
+    {
+      "item": "minecraft:piston"
+    }
+  ],
+  "result": {
+    "id": "tc8core:traffic_block",
+    "count": 1
+  }
+}
