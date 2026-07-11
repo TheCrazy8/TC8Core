@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tc8core:block/dash_refill_crystal"
+    }
+  }
+}
