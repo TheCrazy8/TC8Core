@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tc8core:cyber_city_tiles"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "tc8core:blocks/cyber_city_tiles"
+}
