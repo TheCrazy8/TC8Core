@@ -1,6 +1,7 @@
 package com.example.tc8core;
 
 import com.example.tc8core.celeste.CelesteContent;
+import com.example.tc8core.undertale.UndertaleDeltaruneContent;
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -98,6 +99,7 @@ public class TC8Core {
 
     static {
         CelesteContent.bootstrap();
+        UndertaleDeltaruneContent.bootstrap();
     }
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TC8_CORE_TAB =
@@ -134,6 +136,21 @@ public class TC8Core {
                         output.accept(CelesteContent.MINI_MOUNTAIN_MODEL.get());
                         output.accept(CelesteContent.CELESTE_SIGN.get());
                         output.accept(CelesteContent.CELESTE_BANNER.get());
+
+                        output.accept(UndertaleDeltaruneContent.HUMAN_SOUL.get());
+                        output.accept(UndertaleDeltaruneContent.MONSTER_SOUL.get());
+                        output.accept(UndertaleDeltaruneContent.DETERMINATION.get());
+                        output.accept(UndertaleDeltaruneContent.SHADOW_CRYSTAL.get());
+                        output.accept(UndertaleDeltaruneContent.PURE_CRYSTAL.get());
+                        output.accept(UndertaleDeltaruneContent.DARK_DOLLAR.get());
+                        output.accept(UndertaleDeltaruneContent.EGG.get());
+                        output.accept(UndertaleDeltaruneContent.RUINS_BRICKS.get());
+                        output.accept(UndertaleDeltaruneContent.CORE_TILES.get());
+                        output.accept(UndertaleDeltaruneContent.SAVE_POINT_BLOCK.get());
+                        output.accept(UndertaleDeltaruneContent.CASTLE_TOWN_BRICKS.get());
+                        output.accept(UndertaleDeltaruneContent.CARD_CASTLE_BRICKS.get());
+                        output.accept(UndertaleDeltaruneContent.CYBER_CITY_TILES.get());
+                        output.accept(UndertaleDeltaruneContent.DARK_FOUNTAIN_BLOCK.get());
 
                         output.accept(CHISELED_LAPIS_BLOCK.get());
                         output.accept(CHISELED_EMERALD_BLOCK.get());
