@@ -1,5 +1,5 @@
 {
-  "itemGroup.tc8core": "TC8 Core",
+  "itemGroup.tc8core": "TC8Core",
   "item.tc8core.chiseling_template": "Chiseling Template",
   "item.tc8core.prismatic_quartz": "Prismatic Quartz",
   "block.tc8core.prismatic_quartz_bricks": "Prismatic Quartz Bricks",
@@ -44,5 +44,19 @@
   "item.tc8core.golden_strawberry": "Golden Strawberry",
   "item.tc8core.crystal_heart": "Crystal Heart",
   "item.tc8core.cassette": "Cassette",
-  "item.tc8core.celeste_feather": "Feather"
+  "item.tc8core.celeste_feather": "Feather",
+  "block.tc8core.ruins_bricks": "Ruins Bricks",
+  "block.tc8core.core_tiles": "CORE Tiles",
+  "block.tc8core.save_point_block": "SAVE Point",
+  "block.tc8core.castle_town_bricks": "Castle Town Bricks",
+  "block.tc8core.card_castle_bricks": "Card Castle Bricks",
+  "block.tc8core.cyber_city_tiles": "Cyber City Tiles",
+  "block.tc8core.dark_fountain_block": "Dark Fountain Block",
+  "item.tc8core.human_soul": "Human SOUL",
+  "item.tc8core.monster_soul": "Monster SOUL",
+  "item.tc8core.determination": "Determination",
+  "item.tc8core.shadow_crystal": "Shadow Crystal",
+  "item.tc8core.pure_crystal": "Pure Crystal",
+  "item.tc8core.dark_dollar": "Dark Dollar",
+  "item.tc8core.mysterious_egg": "Egg"
 }
