@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tc8core:block/dark_fountain_block"
+    }
+  }
+}
