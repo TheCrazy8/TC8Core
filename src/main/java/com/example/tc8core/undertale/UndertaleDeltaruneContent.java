@@ -2,6 +2,8 @@ package com.example.tc8core.undertale;
 
 import com.example.tc8core.TC8Core;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tiers;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -11,16 +13,9 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.function.Supplier;
 
-/**
- * Undertale- and Deltarune-inspired decorative content and collectibles.
- *
- * Textures are deliberately not included. Add them under:
- * assets/tc8core/textures/block and assets/tc8core/textures/item.
- */
 public final class UndertaleDeltaruneContent {
     private UndertaleDeltaruneContent() {}
 
-    // Undertale-inspired blocks
     public static final DeferredBlock<Block> RUINS_BRICKS =
             registerBlock("ruins_bricks", MapColor.COLOR_PURPLE, 2.0F, 6.0F, 0);
     public static final DeferredBlock<Block> CORE_TILES =
@@ -28,7 +23,6 @@ public final class UndertaleDeltaruneContent {
     public static final DeferredBlock<Block> SAVE_POINT_BLOCK =
             registerBlock("save_point_block", MapColor.GOLD, 1.0F, 3.0F, 13);
 
-    // Deltarune-inspired blocks
     public static final DeferredBlock<Block> CASTLE_TOWN_BRICKS =
             registerBlock("castle_town_bricks", MapColor.COLOR_PURPLE, 2.5F, 6.0F, 0);
     public static final DeferredBlock<Block> CARD_CASTLE_BRICKS =
@@ -38,7 +32,12 @@ public final class UndertaleDeltaruneContent {
     public static final DeferredBlock<Block> DARK_FOUNTAIN_BLOCK =
             registerBlock("dark_fountain_block", MapColor.COLOR_BLACK, 4.0F, 12.0F, 10);
 
-    // Collectibles and materials
+    public static final DeferredItem<SwordItem> AQUA_KNIFE =
+            TC8Core.ITEMS.register("aqua_knife", () -> new SwordItem(
+                    Tiers.DIAMOND,
+                    new Item.Properties().attributes(
+                            SwordItem.createAttributes(Tiers.DIAMOND, 2, -1.8F))));
+
     public static final DeferredItem<Item> HUMAN_SOUL =
             registerItem("human_soul", true);
     public static final DeferredItem<Item> MONSTER_SOUL =

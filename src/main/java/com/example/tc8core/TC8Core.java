@@ -42,58 +42,35 @@ public class TC8Core {
     public static final DeferredItem<Item> PRISMATIC_QUARTZ =
             ITEMS.register("prismatic_quartz", () -> new Item(new Item.Properties()));
 
-    public static final DeferredBlock<Block> CHISELED_LAPIS_BLOCK =
-            registerBlock("chiseled_lapis_block", MapColor.LAPIS);
-    public static final DeferredBlock<Block> CHISELED_EMERALD_BLOCK =
-            registerBlock("chiseled_emerald_block", MapColor.EMERALD);
-    public static final DeferredBlock<Block> CHISELED_GOLD_BLOCK =
-            registerBlock("chiseled_gold_block", MapColor.GOLD);
-    public static final DeferredBlock<Block> CHISELED_COPPER_BLOCK =
-            registerBlock("chiseled_copper_block", MapColor.COLOR_ORANGE);
-    public static final DeferredBlock<Block> CHISELED_IRON_BLOCK =
-            registerBlock("chiseled_iron_block", MapColor.METAL);
-    public static final DeferredBlock<Block> CHISELED_NETHERITE_BLOCK =
-            registerBlock("chiseled_netherite_block", MapColor.COLOR_BLACK);
-    public static final DeferredBlock<Block> CHISELED_AMETHYST_BLOCK =
-            registerBlock("chiseled_amethyst_block", MapColor.COLOR_PURPLE);
-    public static final DeferredBlock<Block> CHISELED_DIAMOND_BLOCK =
-            registerBlock("chiseled_diamond_block", MapColor.DIAMOND);
-    public static final DeferredBlock<Block> CHISELED_ZINC_BLOCK =
-            registerBlock("chiseled_zinc_block", MapColor.METAL);
-    public static final DeferredBlock<Block> CHISELED_BRASS_BLOCK =
-            registerBlock("chiseled_brass_block", MapColor.GOLD);
-    public static final DeferredBlock<Block> CHISELED_ANDESITE_ALLOY_BLOCK =
-            registerBlock("chiseled_andesite_alloy_block", MapColor.METAL);
-    public static final DeferredBlock<Block> CHISELED_JADE_BLOCK =
-            registerBlock("chiseled_jade_block", MapColor.EMERALD);
-    public static final DeferredBlock<Block> ORE_MOSAIC_BLOCK =
-            registerBlock("ore_mosaic_block", MapColor.METAL);
-    public static final DeferredBlock<Block> CHISELED_PALLADIUM_BLOCK =
-            registerBlock("chiseled_palladium_block", MapColor.METAL);
-    public static final DeferredBlock<Block> CHISELED_LUMINERE_BLOCK =
-            registerBlock("chiseled_luminere_block", MapColor.GOLD);
-    public static final DeferredBlock<Block> CHISELED_ALLURITE_BLOCK =
-            registerBlock("chiseled_allurite_block", MapColor.DIAMOND);
+    public static final DeferredBlock<Block> CHISELED_LAPIS_BLOCK = registerBlock("chiseled_lapis_block", MapColor.LAPIS);
+    public static final DeferredBlock<Block> CHISELED_EMERALD_BLOCK = registerBlock("chiseled_emerald_block", MapColor.EMERALD);
+    public static final DeferredBlock<Block> CHISELED_GOLD_BLOCK = registerBlock("chiseled_gold_block", MapColor.GOLD);
+    public static final DeferredBlock<Block> CHISELED_COPPER_BLOCK = registerBlock("chiseled_copper_block", MapColor.COLOR_ORANGE);
+    public static final DeferredBlock<Block> CHISELED_IRON_BLOCK = registerBlock("chiseled_iron_block", MapColor.METAL);
+    public static final DeferredBlock<Block> CHISELED_NETHERITE_BLOCK = registerBlock("chiseled_netherite_block", MapColor.COLOR_BLACK);
+    public static final DeferredBlock<Block> CHISELED_AMETHYST_BLOCK = registerBlock("chiseled_amethyst_block", MapColor.COLOR_PURPLE);
+    public static final DeferredBlock<Block> CHISELED_DIAMOND_BLOCK = registerBlock("chiseled_diamond_block", MapColor.DIAMOND);
+    public static final DeferredBlock<Block> CHISELED_ZINC_BLOCK = registerBlock("chiseled_zinc_block", MapColor.METAL);
+    public static final DeferredBlock<Block> CHISELED_BRASS_BLOCK = registerBlock("chiseled_brass_block", MapColor.GOLD);
+    public static final DeferredBlock<Block> CHISELED_ANDESITE_ALLOY_BLOCK = registerBlock("chiseled_andesite_alloy_block", MapColor.METAL);
+    public static final DeferredBlock<Block> CHISELED_JADE_BLOCK = registerBlock("chiseled_jade_block", MapColor.EMERALD);
+    public static final DeferredBlock<Block> ORE_MOSAIC_BLOCK = registerBlock("ore_mosaic_block", MapColor.METAL);
+    public static final DeferredBlock<Block> CHISELED_PALLADIUM_BLOCK = registerBlock("chiseled_palladium_block", MapColor.METAL);
+    public static final DeferredBlock<Block> CHISELED_LUMINERE_BLOCK = registerBlock("chiseled_luminere_block", MapColor.GOLD);
+    public static final DeferredBlock<Block> CHISELED_ALLURITE_BLOCK = registerBlock("chiseled_allurite_block", MapColor.DIAMOND);
 
-    public static final DeferredBlock<Block> PRISMATIC_QUARTZ_BRICKS =
-            registerBlock("prismatic_quartz_bricks", MapColor.QUARTZ);
-    public static final DeferredBlock<Block> CHISELED_PRISMATIC_QUARTZ =
-            registerBlock("chiseled_prismatic_quartz", MapColor.QUARTZ);
+    public static final DeferredBlock<Block> PRISMATIC_QUARTZ_BRICKS = registerBlock("prismatic_quartz_bricks", MapColor.QUARTZ);
+    public static final DeferredBlock<Block> CHISELED_PRISMATIC_QUARTZ = registerBlock("chiseled_prismatic_quartz", MapColor.QUARTZ);
     public static final DeferredBlock<RotatedPillarBlock> PRISMATIC_QUARTZ_PILLAR =
             registerPillarBlock("prismatic_quartz_pillar", MapColor.QUARTZ);
 
     public static final DeferredBlock<MagmaBlock> MAGMA_CREAM_BLOCK =
-            BLOCKS.register("magma_cream_block", () ->
-                    new MagmaBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MAGMA_BLOCK)));
-    public static final DeferredItem<BlockItem> MAGMA_CREAM_BLOCK_ITEM =
-            ITEMS.registerSimpleBlockItem(MAGMA_CREAM_BLOCK);
+            BLOCKS.register("magma_cream_block", () -> new MagmaBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MAGMA_BLOCK)));
+    public static final DeferredItem<BlockItem> MAGMA_CREAM_BLOCK_ITEM = ITEMS.registerSimpleBlockItem(MAGMA_CREAM_BLOCK);
 
     public static final DeferredBlock<Block> CHISELED_REDSTONE_BLOCK =
-            BLOCKS.register("chiseled_redstone_block", () ->
-                    new PoweredChiseledBlock(BlockBehaviour.Properties.of()
-                            .mapColor(MapColor.COLOR_RED)
-                            .requiresCorrectToolForDrops()
-                            .strength(5.0F, 6.0F)));
+            BLOCKS.register("chiseled_redstone_block", () -> new PoweredChiseledBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_RED).requiresCorrectToolForDrops().strength(5.0F, 6.0F)));
     public static final DeferredItem<BlockItem> CHISELED_REDSTONE_BLOCK_ITEM =
             ITEMS.registerSimpleBlockItem(CHISELED_REDSTONE_BLOCK);
 
@@ -137,6 +114,7 @@ public class TC8Core {
                         output.accept(CelesteContent.CELESTE_SIGN.get());
                         output.accept(CelesteContent.CELESTE_BANNER.get());
 
+                        output.accept(UndertaleDeltaruneContent.AQUA_KNIFE.get());
                         output.accept(UndertaleDeltaruneContent.HUMAN_SOUL.get());
                         output.accept(UndertaleDeltaruneContent.MONSTER_SOUL.get());
                         output.accept(UndertaleDeltaruneContent.DETERMINATION.get());
@@ -178,21 +156,15 @@ public class TC8Core {
     }
 
     private static DeferredBlock<Block> registerBlock(String name, MapColor color) {
-        DeferredBlock<Block> block = BLOCKS.register(name, () ->
-                new Block(BlockBehaviour.Properties.of()
-                        .mapColor(color)
-                        .requiresCorrectToolForDrops()
-                        .strength(5.0F, 6.0F)));
+        DeferredBlock<Block> block = BLOCKS.register(name, () -> new Block(BlockBehaviour.Properties.of()
+                .mapColor(color).requiresCorrectToolForDrops().strength(5.0F, 6.0F)));
         ITEMS.registerSimpleBlockItem(block);
         return block;
     }
 
     private static DeferredBlock<RotatedPillarBlock> registerPillarBlock(String name, MapColor color) {
-        DeferredBlock<RotatedPillarBlock> block = BLOCKS.register(name, () ->
-                new RotatedPillarBlock(BlockBehaviour.Properties.of()
-                        .mapColor(color)
-                        .requiresCorrectToolForDrops()
-                        .strength(5.0F, 6.0F)));
+        DeferredBlock<RotatedPillarBlock> block = BLOCKS.register(name, () -> new RotatedPillarBlock(
+                BlockBehaviour.Properties.of().mapColor(color).requiresCorrectToolForDrops().strength(5.0F, 6.0F)));
         ITEMS.registerSimpleBlockItem(block);
         return block;
     }
