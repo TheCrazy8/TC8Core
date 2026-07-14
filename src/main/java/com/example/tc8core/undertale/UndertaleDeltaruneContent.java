@@ -2,6 +2,7 @@ package com.example.tc8core.undertale;
 
 import com.example.tc8core.TC8Core;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
@@ -9,7 +10,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
-import vectorwing.farmersdelight.common.item.KnifeItem;
 
 import java.util.function.Supplier;
 
@@ -22,6 +22,7 @@ public final class UndertaleDeltaruneContent {
             registerBlock("core_tiles", MapColor.COLOR_RED, 3.0F, 8.0F, 5);
     public static final DeferredBlock<Block> SAVE_POINT_BLOCK =
             registerBlock("save_point_block", MapColor.GOLD, 1.0F, 3.0F, 13);
+
     public static final DeferredBlock<Block> CASTLE_TOWN_BRICKS =
             registerBlock("castle_town_bricks", MapColor.COLOR_PURPLE, 2.5F, 6.0F, 0);
     public static final DeferredBlock<Block> CARD_CASTLE_BRICKS =
@@ -31,11 +32,11 @@ public final class UndertaleDeltaruneContent {
     public static final DeferredBlock<Block> DARK_FOUNTAIN_BLOCK =
             registerBlock("dark_fountain_block", MapColor.COLOR_BLACK, 4.0F, 12.0F, 10);
 
-    public static final DeferredItem<KnifeItem> AQUA_KNIFE =
-            TC8Core.ITEMS.register("aqua_knife", () -> new KnifeItem(
+    public static final DeferredItem<AquaKnifeItem> AQUA_KNIFE =
+            TC8Core.ITEMS.register("aqua_knife", () -> new AquaKnifeItem(
                     Tiers.DIAMOND,
                     new Item.Properties().attributes(
-                            KnifeItem.createAttributes(Tiers.DIAMOND, 2.0F, -1.8F))));
+                            SwordItem.createAttributes(Tiers.DIAMOND, 2.0F, -1.8F))));
 
     public static final DeferredItem<Item> HUMAN_SOUL = registerItem("human_soul", true);
     public static final DeferredItem<Item> MONSTER_SOUL = registerItem("monster_soul", false);
